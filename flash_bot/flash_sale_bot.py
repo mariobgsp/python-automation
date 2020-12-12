@@ -1,9 +1,19 @@
+# Flash Sale Bot for Shopee
+# mariobgsp
+
+# install python 3.8.3: https://www.python.org/downloads/release/python-383/
+# open cmd then type: pip install selenium
+# install chromedriver in https://chromedriver.chromium.org/
+
+
+# Import Module
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 import time 
 
-PATH = "D:/bot_gabut/chromedriver.exe" # Please be mind your path directory chromedriver.exe  
+PATH = "D:/bot_gabut/chromedriver.exe" 
+# Please be mind your path directory chromedriver.exe  
 driver = webdriver.Chrome(PATH)
 
 # Login Credentials
@@ -38,7 +48,8 @@ time.sleep(1) # wait to load 3s, if you want it faster, you should reduce the nu
 login_button = driver.find_element_by_xpath("//button[@class='_35rr5y _32qX4k _1ShBrl _3z3XZ9 _2iOIqx _2h_2_Y']")
 login_button.click()
 
-time.sleep(10) # 
+time.sleep(2) #OTP Time, you can set it to longer time and input your OTP manually, 
+              # or you just can disable OTP from shopee settings 
 
 # Buy buy buy
 driver.get(product_link)
@@ -47,3 +58,5 @@ time.sleep(2) # wait to load
 
 buy_out = driver.find_element_by_xpath("//button[@class='btn btn-solid-primary btn--l YtgjXY']")
 buy_out.click()
+
+# Done, You should checkout manually
