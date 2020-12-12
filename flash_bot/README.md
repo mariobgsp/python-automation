@@ -9,6 +9,8 @@ Install a chromedriver that correspond on your browser, if you're using chrome y
 * [Chromedriver](https://chromedriver.chromium.org/)
 * [Firefox](https://github.com/mozilla/geckodriver/releases)
 
+You have to remember where you put your webdriver coz it'll be use in the code PATH line 17
+
 #### 2. Installing Python and Moduls
 This bot only use few of lines that executing every single lines from start until ends. The first you musn't forget is of course installing python, here i use Python 3.8.3 you can install python from [here](https://www.python.org/downloads/release/python-383/) 
 
@@ -22,10 +24,10 @@ wait till it done and it's all set, you're ready to start!!
 ### Getting Started
 This is how it started
 * First open up your ```flash_sale_bot.py``` using any IDE, you're free to use any IDE you have in your PC (VS Code etc)
-* Change the email and password, change it into your credentials
-* Input your product link in ```product_link``` in that syntax line 17..
+* Change the email and password, change it into your credentials on line 20 and line 21
+* Input your product link in ```product_link``` in that syntax line 27..
 * After you finish those steps you can just execute the code, RUN it (VS Code) or Build it (Sublime Text) or anything.
-* The webdriver will do their task properly
+* The webdriver will do their task nicely
 
 ### How the BOT works
 here's how the BOT actually works
@@ -34,7 +36,7 @@ here's how the BOT actually works
 * Loads you into the product and click the buy out button for you, yeah you like a king huh
 * It's not including clicking on checkout button, coz you wouldn't need that, i mean you should do it manually
 * and you finish all the rest 
-(dev suggestions: you should turn off OTP login things to get this BOT works smoothly, but you can set the ```time.sleep()``` in line 41 into the time you need to input and then it loads back, yeah just like that.
+(dev suggestions: you should turn off OTP login things to get this BOT works smoothly, but you can set the ```time.sleep()``` in line 51 into the time you need to input and then it loads your product by it self, yeah just like that.
 
 ### Pros and Cons
 the pros is:
@@ -46,11 +48,9 @@ the cons is:
 * You must estimate the time left until the product open, or you just can execute at the times the flash sale open
 
 ### Further Development
-Maybe i'm just going to add GUI to make it nicer for every USER, yeah but someday, somehow.
-<br>
-Maybe i'm going to add try and except method to make it easier to use too, yeah someday
+Maybe i'm just going to add GUI to make it nicer for every USER and i'm going to add try and except method to make it easier to use too, yeah but someday, somehow.
 
 ```
 Muhammad Ario Bagus Prakusa
-Newbie Python Programmer
+Newbie Python Programmer, 2020
 ```
